@@ -41,6 +41,7 @@ class MyHashMap:
 
     # initialize your data structure here.
     def __init__(self, initial_size=1, load_factor_threshold=0.7):
+        # self.size = initial_size
         self.size = 10
         self.load_factor_threshold = load_factor_threshold
         self.num_elements = 0  # Tracks the number of stored elements
@@ -83,7 +84,7 @@ class MyHashMap:
         # Check load factor and resize if needed
         if self.num_elements / self.size > self.load_factor_threshold:
             print(f"Time to resize-1")
-            self._resize()
+            # self._resize()
 
     # delete function to remove the key-value pair from the hashmap
     def delete(self, key: int) -> None:
