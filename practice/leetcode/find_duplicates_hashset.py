@@ -14,15 +14,20 @@ You can simply iterate each value and insert the value into the set. If a value 
 def contains_duplicate(nums):
     seen = set()
     print(f"Info seen: {len(seen)}")
-    for num in nums:
-        print(f"Info num: {num} and {seen}")
-        if num in seen:
-            print(f"inside if ")
-            return True
-        seen.add(num)
+    
+    for i, num in enumerate(nums):
+        if -10**9 <= nums[i] <= 10**9:
+            print(f"Info-1 num and seen: {num} and {seen}")
+            print(f"Info num: {num} and {seen}")
+            if num in seen:
+                print(f"inside if ")
+                return True
+            seen.add(num)
     print(f"Info-3 num and seen: {seen}")
     return False
 
 # Example Usage
 nums = [1, 2, 3, 4, 1]
+# nums = [1,2,3,4]
+# nums =  [1,1,1,3,3,4,3,2,4,2]
 print(contains_duplicate(nums))  # Output: True
