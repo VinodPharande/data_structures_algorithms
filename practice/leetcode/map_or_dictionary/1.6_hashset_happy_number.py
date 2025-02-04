@@ -15,7 +15,7 @@ class Solution:
     def isHappy(self, n: int) -> bool:
         seen = set()
         # seen.clear()
-        if 1 <= n <= 231 - 1:
+        if 1 <= n <= 2**31 - 1:
             while n != 1 and n not in seen:
                 new_n = 0  # Initialize sum of squares
                 seen.add(n)
@@ -35,7 +35,7 @@ class Solution:
             print("ValueError: n must be between 1 and 231 - 1")
             raise ValueError("Array lengths must be between 1 and 1000")
         
-        
+
 n = 19  # True
 # n = 12  # False
 # n = 345  # raise Exception
