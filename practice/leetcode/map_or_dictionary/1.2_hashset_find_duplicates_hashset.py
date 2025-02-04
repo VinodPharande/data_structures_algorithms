@@ -7,6 +7,7 @@ Therefore, typically, a hash set is used to check if a value has ever appeared o
 An Example
 Let's look at an example:
 Given an array of integers, find if the array contains any duplicates. 
+
 This is a typical problem which can be solved by a hash set.
 You can simply iterate each value and insert the value into the set. If a value has already been in the hash set, there is a duplicate.
 '''
