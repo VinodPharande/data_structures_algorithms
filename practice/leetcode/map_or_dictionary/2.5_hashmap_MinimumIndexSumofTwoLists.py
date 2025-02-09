@@ -39,6 +39,9 @@ There is at least a common string between list1 and list2.
 
 """
 Constraint Breakdown and How They Are Handled
+i.e. Constraints Are Implicitly Applied in Code i.e. The constraints aren't directly enforced using if conditions in the code. 
+Instead, the constraints are implicitly handled by the code logic. This is a common practice in Python, 
+where the language itself takes care of many constraints.
 Constraint	Where It Is Handled
 1 <= len(list1), len(list2) <= 1000	✅ The O(n + m) complexity ensures that even for the maximum size (1000 elements), the solution runs efficiently.
 1 <= len(word) <= 30	✅ Python’s string handling automatically supports words up to 30 characters. No need for explicit checks.
